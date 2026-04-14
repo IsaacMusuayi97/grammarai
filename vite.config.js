@@ -7,7 +7,9 @@ export default defineConfig({
    preview: {
     host: true,
     allowedHosts: [
-      'grammarai.onrender.com'
+      'grammarai.onrender.com',
+      "www.grammarai.org",
+      "grammarai.org"
     ]
   }
 })
