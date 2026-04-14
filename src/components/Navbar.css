@@ -1,0 +1,58 @@
+.nav {
+    background-color: black;
+}
+
+.nav_inner {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+.nav__logo {
+    background-color: #6a68f3;
+    height: 1.5rem;
+    border-radius: .3rem;
+    margin-right: .4rem;
+}
+
+.nav__title {
+    font-weight: 700;
+    color: white;
+}
+
+.nav_brand {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav__humanize{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: white;
+}
+
+.nav__link, .nav__btn {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: white;
+}
+
+.nav__link {
+    border-left: #2a2727 3px solid;
+    padding-left: 1.5rem;
+}
+
+.nav__link:hover, .nav__humanize:hover {
+    color: #6a68f3;
+}
+
+.nav__btn {
+    background-color: #6a68f3;
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+}
