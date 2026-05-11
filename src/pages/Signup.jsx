@@ -16,7 +16,7 @@ export default function Signup() {
         setError(null);
 
         try {
-            const response = await fetch('https://grammarai.onrender.com/signup', {
+            const response = await fetch('https://grammarai.onrender.com/auth/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
