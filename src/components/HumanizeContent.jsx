@@ -36,7 +36,7 @@ export default function HumanizeContent() {
         setIsLoading(true);
         setError(null);
         try {
-            const response = await fetch('http://localhost:3000/humanize', {
+            const response = await fetch('https://www.grammarai.org/humanize', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

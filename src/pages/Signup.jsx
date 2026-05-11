@@ -16,7 +16,7 @@ export default function Signup() {
         setError(null);
 
         try {
-            const response = await fetch('http://localhost:3000/auth/signup', {
+            const response = await fetch('https://www.grammarai.org/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

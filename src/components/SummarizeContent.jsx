@@ -9,6 +9,8 @@ export default function SummarizeContent() {
      const [error, setError] = useState(null);
      const getToken = () => localStorage.getItem("token");
      console.log("TOKEN IN SUMMARIZE:", getToken());
+
+     
      const errorMessages = {
         TEXT_REQUIRED: "Please enter some text",
         TEXT_TOO_SHORT: "Text is too short (min 250 characters)",
@@ -45,7 +47,7 @@ export default function SummarizeContent() {
         setIsLoading(true);
         setError(null);
         try {
-            const response = await fetch('http://localhost:3000/summarize', {
+            const response = await fetch('https://www.grammarai.org/summarize', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
