@@ -9,7 +9,14 @@ mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error("DB error:", err));
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://www.grammarai.org',
+    'https://grammarai.org',
+    'https://grammarai-1.onrender.com'
+  ],
+  credentials: true
+}));
 
 app.use(express.json());
 
