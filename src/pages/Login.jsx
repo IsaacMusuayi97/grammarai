@@ -16,7 +16,7 @@ export default function Login() {
         setError(null);
 
         try {
-            const response = await fetch('https://www.grammarai.org/login', {
+            const response = await fetch('https://grammarai.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -47,7 +47,7 @@ export default function SummarizeContent() {
         setIsLoading(true);
         setError(null);
         try {
-            const response = await fetch('https://www.grammarai.org/summarize', {
+            const response = await fetch('https://grammarai.onrender.com/summarize', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
